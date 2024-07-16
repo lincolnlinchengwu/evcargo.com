@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to EVCargo</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KBZHQLFNBY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KBZHQLFNBY');
+</script>
+<body>
+<h1>Redirecting...</h1>
+    <p>You will be redirected in a moment. If not, <a href="https://issuu.com/ev_cargo/docs/ev_cargo_digital_brochure_de_">click here</a>.</p>
+
+    <script>
+        function delayedRedirect() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'pageView',
+                'eventCallback': function() {
+                    window.location = "https://issuu.com/ev_cargo/docs/ev_cargo_digital_brochure_de_";
+                },
+                'eventTimeout': 2000
+            });
+        }
+
+        // Call the delayedRedirect function when the page loads
+        window.onload = delayedRedirect;
+    </script>
+
+</body>
+</html>
